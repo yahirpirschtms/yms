@@ -12,11 +12,11 @@
 <body>
   <!--Navegation menu-->
   <section>
-    <div>
+    <div class="">
       <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1e4877; color:white">
         <div class="container-fluid d-flex justify-content-start">
           <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" ></span>
+          <i class="fa-solid fa-bars text-light"></i>
           </button>
           <a class="navbar-brand fw-bolder text-light fs-4" href="#">
             <img src="{!! asset('/icons/tms_logo.png')!!}" alt="Logo" height="35" class="d-inline-block align-middle">
@@ -31,15 +31,84 @@
               <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
 
                 <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="#">Home</a><i class="fa-solid fa-bars"></i>
+                  <a class="nav-link text-light" aria-current="page" href="#">Trailer Status</a>
                 </li>
+
+                <!--options shipments-->
                 <li class="nav-item dropdown ">
                   <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Shipments
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-start">
-                    <li><a class="dropdown-item" href="#">Live Shipments</a></li>
-                    <li><a class="dropdown-item" href="#">All Shipments</a></li>
+                  <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
+                    <li><a class="dropdown-item text-light" href="#">Live Shipments</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">All Shipments</a></li>
+                    <!--<li>
+                      <hr class="dropdown-divider">
+                    </li>-->
+                  </ul>
+                </li>
+
+                <!--options catalog-->
+                <li class="nav-item dropdown ">
+                  <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Carriers
+                  </a>
+                  <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
+                    <li><a class="dropdown-item text-light" href="#">Carrier Management</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Driver Management</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Trailer Management</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Truck Management</a></li>
+
+                    <!--<li>
+                      <hr class="dropdown-divider">
+                    </li>-->
+                  </ul>
+                </li>
+
+                <!--options calendar-->
+                <li class="nav-item dropdown ">
+                  <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Appoinment Viewer
+                  </a>
+                  <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
+                    <li><a class="dropdown-item text-light" href="#">WH Appointment Approval</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">WH Appointment Viewer</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item text-light" href="#">Historical Calendar Viewer</a></li>
+                    <!--<li>
+                      <hr class="dropdown-divider">
+                    </li>-->
+                  </ul>
+                </li>
+
+                <!--options calendar-->
+                <li class="nav-item dropdown ">
+                  <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Maintenance
+                  </a>
+                  <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
+                    <li><a class="dropdown-item  text-light" href="#">Maintenance Done</a></li>
+                    <li class="ms-2 me-4">
+                      <hr class="dropdown-divider bg-white">
+                    </li>
+                    <li><a class="dropdown-item  text-light" href="#">Truck Maintenance</a></li>
                     <!--<li>
                       <hr class="dropdown-divider">
                     </li>-->
@@ -56,63 +125,13 @@
         </div>
       </nav>
     </div>
-  </section>
 
-
-    <!--Navegation menu-->
-    <section>
-      <div class="">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              TMS YMS
-            </a>  
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Default</a>
       </div>
-    </section>
-
-
-  <section>
-    <div class="container mt-4">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
+    </nav>
   </section>
+  
 </body>
 </html>
