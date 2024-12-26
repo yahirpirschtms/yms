@@ -78,24 +78,22 @@
                 </li>
 
                 <!--options calendar-->
-                <li class="nav-item dropdown ">
-                  <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Appoinment Viewer
-                  </a>
-                  <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
+                    </a>
+                    <ul class="ms-4 dropdown-menu dropdown-menu-start" style="background-color: #1e4877; border:none">
                     <li><a class="dropdown-item text-light" href="#">WH Appointment Approval</a></li>
                     <li class="ms-2 me-4">
-                      <hr class="dropdown-divider bg-white">
+                        <hr class="dropdown-divider bg-white">
                     </li>
-                    <li><a class="dropdown-item text-light" href="#">WH Appointment Viewer</a></li>
+                    <!-- Aquí agregamos la opción para ver el calendario -->
+                    <li><a class="dropdown-item text-light" href="{{ route('calendar.view') }}">WH Appointment Viewer</a></li>
                     <li class="ms-2 me-4">
-                      <hr class="dropdown-divider bg-white">
+                        <hr class="dropdown-divider bg-white">
                     </li>
                     <li><a class="dropdown-item text-light" href="#">Historical Calendar Viewer</a></li>
-                    <!--<li>
-                      <hr class="dropdown-divider">
-                    </li>-->
-                  </ul>
+                    </ul>
                 </li>
 
                 <!--options calendar-->
@@ -132,6 +130,6 @@
       </div>
     </nav>
   </section>
-  
+
 </body>
 </html>
